@@ -25,6 +25,12 @@ AFRAME.registerComponent('toggle', {
                     document.querySelector('#design5').setAttribute('visible', 'true')
                 } else if (document.querySelector('#design5').getAttribute('visible', 'true')) {
                     document.querySelector('#design5').setAttribute('visible', 'false');
+                    document.querySelector('#design6').setAttribute('visible', 'true')
+                } else if (document.querySelector('#design6').getAttribute('visible', 'true')) {
+                    document.querySelector('#design6').setAttribute('visible', 'false');
+                    document.querySelector('#design7').setAttribute('visible', 'true')
+                } else if (document.querySelector('#design7').getAttribute('visible', 'true')) {
+                    document.querySelector('#design7').setAttribute('visible', 'false');
                     document.querySelector('#design1').setAttribute('visible', 'true')
                 }
             } else if (itemID == "to-about-button") {

@@ -97,67 +97,118 @@
         <a-entity position="0 0 0"
         geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
         material="repeat: 10000 10000; metalness:0.1; roughness: 0.4; color: lightgray"></a-entity>
-        <a-plane id = "ceiling" position="0 10 0" scale="1 1 1" width="100000" height="100000" rotation="90 0 0" color="white" side="double"></a-plane>
+        <a-plane id = "ceiling" position="0 6 0" scale="1 1 1" width="100000" height="100000" rotation="90 0 0" color="white" side="double"></a-plane>
     
         <!--ROOM 1-->
-        <a-plane position="0 5 3" rotation="0 180 0" width="20" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="10 5 -4.5" rotation="0 90 0" width="15" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-10 5 -4.5" rotation="0 -90 0" width="15" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-6 5 -12" width="8" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="6 5 -12" width="8" height="10" color="pink" side="double"></a-plane>
+        <a-plane position="0 3 3" rotation="0 180 0" width="10" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="5 3 -4.5" rotation="0 90 0" width="15" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-5 3 -4.5" rotation="0 -90 0" width="15" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-6 3 -12" width="8" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="6 3 -12" width="8" height="6" color="pink" side="double"></a-plane>
     
         <!--FIRST TUNNEL-->
-        <a-plane position="2 5 -14.5" rotation="0 90 0" width="5" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-2 5 -14.5" rotation="0 -90 0" width="5" height="10" color="pink" side="double"></a-plane>
+        <a-plane position="2 3 -14.5" rotation="0 90 0" width="5" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-2 3 -14.5" rotation="0 -90 0" width="5" height="6" color="pink" side="double"></a-plane>
     
         <!--ROOM 2-->
-        <a-plane position="-8.5 5 -17" rotation="0 180 0" width="13" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="8.5 5 -17" rotation="0 180 0" width="13" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="15 5 -32" rotation="0 90 0" width="30" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-15 5 -32" rotation="0 -90 0" width="30" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-8.5 5 -47" width="13" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="8.5 5 -47" width="13" height="10" color="pink" side="double"></a-plane>
+        <a-plane position="-3.5 3 -17" rotation="0 180 0" width="3" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="3.5 3 -17" rotation="0 180 0" width="3" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="5 3 -27" rotation="0 90 0" width="20" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-5 3 -27" rotation="0 -90 0" width="20" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-3.5 3 -37" width="3" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="3.5 3 -37" width="3" height="6" color="pink" side="double"></a-plane>
     
         <!--SECOND TUNNEL-->
-        <a-plane position="2 5 -49.5" rotation="0 90 0" width="5" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-2 5 -49.5" rotation="0 -90 0" width="5" height="10" color="pink" side="double"></a-plane>
+        <a-plane position="2 3 -39.5" rotation="0 90 0" width="5" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-2 3 -39.5" rotation="0 -90 0" width="5" height="6" color="pink" side="double"></a-plane>
     
         <!--ROOM 3-->
-        <a-plane position="-8.5 5 -52" rotation="0 180 0" width="13" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="8.5 5 -52" rotation="0 180 0" width="13" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="15 5 -67" rotation="0 90 0" width="30" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-15 5 -67" rotation="0 -90 0" width="30" height="10" color="pink" side="double"></a-plane>
-        <a-plane position="-8.5 5 -82" width="30" height="10" color="pink" side="double"></a-plane>
+        <a-plane position="-8.5 3 -42" rotation="0 180 0" width="13" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="8.5 3 -42" rotation="0 180 0" width="13" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="13 3 -52" rotation="0 90 0" width="20" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="-13 3 -52" rotation="0 -90 0" width="20" height="6" color="pink" side="double"></a-plane>
+        <a-plane position="0 3 -62" width="30" height="6" color="pink" side="double"></a-plane>
     
     
         <!--SCREENS-->
-        <a-image toggle class="interact" id="get-started" src="image/get-started.png" position="0 1.5 -3" width="5" height="3" visible="true"></a-image>
-        <a-image toggle class="interact" id="overview" src="image/overview.png" position="0 1.5 -3" width="5" height="3" visible="false"></a-image>
+        <a-image toggle class="interact" id="get-started" src="image/get-started.png" position="0 1.5 -3" width="5" height="3" visible="true">
+          <a-box toggle class="interact" id="start-box" width="0.9" height="0.225" depth="0.1" opacity="100%" position="-1.5 -0.5 0">
+            <a-image toggle class="interact" id="start" transparent="true" position="0 0 0.05" src="image/start.png" width="0.9" height="0.225"></a-image>
+          </a-box>
+        </a-image>
 
-        <a-image id="design1" src="image/design1.png" position="0 1.5 -7" width="5" height="3"></a-image>
-        <a-image id="design2" src="image/design2.png" position="0 1.5 -7" width="5" height="3" visible="false"></a-image>
-        <a-image id="design3" src="image/design3.png" position="0 1.5 -7" width="5" height="3" visible="false"></a-image>
+        <a-image transparent="true" src="image/prompt-arrow.png" position="-2 0.1 -2" rotation="-90 145 0" width="1.5" height="0.5"></a-image>
+        <a-image transparent="true" src="image/prompt-arrow.png" position="2 0.1 -2" rotation="-90 35 0" width="1.5" height="0.5"></a-image>
 
-        <a-box width="0.9" height="0.225" depth="0.1" opacity="100%" position="0 0.4 -7">
+        <a-image transparent="true" src="image/id-button.png" position="-2 0.1 -7" rotation="-90 145 0" width="1.5" height="0.5"></a-image>
+        <a-image transparent="true" src="image/id-button.png" position="2 0.1 -7" rotation="-90 35 0" width="1.5" height="0.5"></a-image>
+      
+        <a-image toggle class="interact" id="overview" transparent="true"  src="image/overview.png" position="0 1.5 -3" width="5" height="3" visible="false"></a-image>
+
+        <a-image id="design1" src="image/design1.png" position="0 1.5 -8" width="5" height="3"></a-image>
+        <a-image id="design2" src="image/design2.png" position="0 1.5 -8" width="5" height="3" visible="false"></a-image>
+        <a-image id="design3" src="image/design3.png" position="0 1.5 -8" width="5" height="3" visible="false"></a-image>
+        <a-image id="design4" src="image/design4.png" position="0 1.5 -8" width="5" height="3" visible="false"></a-image>
+        <a-image id="design5" src="image/design5.png" position="0 1.5 -8" width="5" height="3" visible="false"></a-image>
+
+        <a-box toggle class="interact" id="refresh-box" width="0.9" height="0.225" depth="0.1" opacity="100%" position="0 0.4 -8">
           <a-image toggle class="interact" id="refresh" transparent="true" position="0 0 0.05" src="image/refresh.png" width="0.9" height="0.225"></a-image>
         </a-box>
 
-        <a-image id="ideation-sign" src="image/ideation.png" position="0 6 -17" width="4" height="0.8"></a-image>
-        <a-image id="ideation-guide" src="image/ideation-guide.png" position="0 2 -19" width="2" height="3"></a-image>
-        <a-image src="image/empathy.png" position="14 2 -32" rotation="0 -90 0" width="3" height="3.4"></a-image>
-        <a-image src="image/empathy.png" position="14 2 -26" rotation="0 -90 0" width="3" height="3.4"></a-image>
-        <a-image src="image/empathy.png" position="14 2 -38" rotation="0 -90 0" width="3" height="3.4"></a-image>
-        <a-image src="image/persona.png" position="-14 2 -32" rotation="0 90 0" width="3" height="2.5"></a-image>
-        <a-image src="image/persona.png" position="-14 2 -26" rotation="0 90 0" width="3" height="2.5"></a-image>
-        <a-image src="image/persona.png" position="-14 2 -38" rotation="0 90 0" width="3" height="2.5"></a-image>
-        <a-image src="image/interviews.png" position="-8.5 2 -46" width="3" height="2.5"></a-image>
-        <a-image src="image/interviews.png" position="8.5 2 -46" width="3" height="2.5"></a-image>
+        <a-image id="ideation-sign" src="image/ideation.png" position="0 5 -17" width="4" height="0.8"></a-image>
+        <a-image id="ideation-guide" src="image/ideation-guide.png" position="0 2 -18" width="2" height="3"></a-image>
+        <a-image src="image/empathy.png" position="4.9 2 -22" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/empathy2.png" position="4.9 2 -26" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/empathy3.png" position="4.9 2 -30" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/persona.png" position="-4.9 2 -22" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/persona2.png" position="-4.9 2 -26" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/persona3.png" position="-4.9 2 -30" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/interviews.png" position="-3.5 2 -37" width="3" height="2.5"></a-image>
+        <a-image src="image/interviews.png" position="3.5 2 -37" width="3" height="2.5"></a-image>
 
 
+        <a-image id="presentation-sign" src="image/presentation.png" position="0 5 -42" width="4" height="0.8"></a-image>
+        <a-image src="image/serene.png" position="-6 2.5 -55" rotation="0 10 0" width="4" height="4.6"></a-image>
+        <a-image src="image/weconnect.png" position="6 2.5 -55" rotation="0 -10 0" width="4" height="4.6"></a-image>
+        <a-image src="image/sticky.png" position="0 1.3 -55" rotation="0 0 0" width="3.125" height="1"></a-image>
+        <a-image toggle class="interact" id="ty" src="image/ty.png" position="0 3.5 -55" rotation="0 0 0" width="5" height="3" visible="">
+          <a-box toggle class="interact" id="to-about-button" width="1.2" height="0.2" depth="0.1" opacity="100%" position="-1.2 -0.7 0" visible="">
+            <a-image toggle class="interact" id="to-about" transparent="true" src="image/to-about.png" position="0 0 0.05" rotation="0 0 0" width="1.2" height="0.2" visible=""></a-image>
+          </a-box>
+        </a-image>
+        <a-image toggle class="interact" id="about" src="image/about.png" position="0 3.5 -55" rotation="0 0 0" width="5" height="3" visible="false">
+          <a-box toggle class="interact" id="to-ty-button" width="0.9" height="0.2" depth="0.1" opacity="100%" position="-1.6 -1 0" visible="false">
+            <a-image toggle class="interact" id="to-ty" transparent="true" src="image/back.png" position="0 0 0.05" rotation="0 0 0" width="0.9" height="0.2" visible="false"></a-image>
+          </a-box>
+        </a-image>
 
+        <!--TABLES-->
+      <a-entity>
+        <a-box width="1.5" height="0.1" depth="1.5" position="0 1 -22" color="#77311D">
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 0.71" color="#77311D"></a-box>
+        </a-box>
+      </a-entity>
 
-        <a-image id="presentation-sign" src="image/presentation.png" position="0 6 -52" width="4" height="0.8"></a-image>
+      <a-entity>
+        <a-box width="1.5" height="0.1" depth="1.5" position="0 1 -26" color="#77311D">
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 0.71" color="#77311D"></a-box>
+        </a-box>
+      </a-entity>
 
+      <a-entity>
+        <a-box width="1.5" height="0.1" depth="1.5" position="0 1 -30" color="#77311D">
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="-0.71 -0.5 -0.71" color="#77311D"></a-box>
+          <a-box width="0.08" height="0.95" depth="0.08" position="0.71 -0.5 0.71" color="#77311D"></a-box>
+        </a-box>
+      </a-entity>
 
 
       </a-entity>

@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="/js/spawn-in-circle.component.js"></script>
+    <script src="/components/change-overview.js"></script>
   </head>
   <body>
 
@@ -79,8 +80,8 @@
         <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
           <a-entity cursor="rayOrigin: mouse"></a-entity>
         </a-entity>
-        <a-entity hand-controls="left" laser-controls="hand:right" raycaster="far: 10"></a-entity>
-        <a-entity hand-controls="right" laser-controls="hand:left" raycaster="far: 10"></a-entity>
+        <a-entity hand-controls="left" laser-controls="hand:right"></a-entity>
+        <a-entity hand-controls="right" laser-controls="hand:left"></a-entity>
         <a-entity id="player"position="0 0 0" networked="template:#player-template;attachTemplateToLocal:false;" spawn-in-circle="radius:3">
           <a-entity position="0 0 0" networked="template:#head-template;attachTemplateToLocal:false;">
               <a-sphere class="head"
@@ -129,14 +130,36 @@
         <a-plane position="-8.5 5 -82" width="30" height="10" color="pink" side="double"></a-plane>
     
     
-        <!--SCREENS
-        <a-plane width="4" height="2" position="0 1 -3" color="brown">
-          <a-text value="get started" color="black" position="0 0 0" align="center"></a-text>
-        </a-plane>
-    
-        <a-plane width="4" height="2" position="0 1 -9"color="pink">
-          <a-text value="random prompt" color="black" position="0 0 0"></a-text>
-        </a-plane>-->
+        <!--SCREENS-->
+        <a-image toggle class="interact" id="get-started" src="image/get-started.png" position="0 1.5 -3" width="5" height="3" visible="true"></a-image>
+        <a-image toggle class="interact" id="overview" src="image/overview.png" position="0 1.5 -3" width="5" height="3" visible="false"></a-image>
+
+        <a-image id="design1" src="image/design1.png" position="0 1.5 -7" width="5" height="3"></a-image>
+        <a-image id="design2" src="image/design2.png" position="0 1.5 -7" width="5" height="3" visible="false"></a-image>
+        <a-image id="design3" src="image/design3.png" position="0 1.5 -7" width="5" height="3" visible="false"></a-image>
+
+        <a-box width="0.9" height="0.225" depth="0.1" opacity="100%" position="0 0.4 -7">
+          <a-image toggle class="interact" id="refresh" transparent="true" position="0 0 0.05" src="image/refresh.png" width="0.9" height="0.225"></a-image>
+        </a-box>
+
+        <a-image id="ideation-sign" src="image/ideation.png" position="0 6 -17" width="4" height="0.8"></a-image>
+        <a-image id="ideation-guide" src="image/ideation-guide.png" position="0 2 -19" width="2" height="3"></a-image>
+        <a-image src="image/empathy.png" position="14 2 -32" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/empathy.png" position="14 2 -26" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/empathy.png" position="14 2 -38" rotation="0 -90 0" width="3" height="3.4"></a-image>
+        <a-image src="image/persona.png" position="-14 2 -32" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/persona.png" position="-14 2 -26" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/persona.png" position="-14 2 -38" rotation="0 90 0" width="3" height="2.5"></a-image>
+        <a-image src="image/interviews.png" position="-8.5 2 -46" width="3" height="2.5"></a-image>
+        <a-image src="image/interviews.png" position="8.5 2 -46" width="3" height="2.5"></a-image>
+
+
+
+
+        <a-image id="presentation-sign" src="image/presentation.png" position="0 6 -52" width="4" height="0.8"></a-image>
+
+
+
       </a-entity>
     </a-scene>
 
